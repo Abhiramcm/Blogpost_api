@@ -1,0 +1,15 @@
+
+curl -v http://localhost:8000
+
+To save blog:-
+	curl -v  -d '{"title":"baeldung","body":"xyz","author_name":"vv","email":"a@gmail.com"}' -H 'Content-Type: application/json' http://localhost:8000/new
+	curl -v  -d '{"title":"building","body":"abc","author_name":"vv","email":"abc@gmail.com"}' -H 'Content-Type: application/json' http://localhost:8000/new
+
+To view all blogs:-
+	curl -v http://localhost:8000/all
+
+To Delete :-
+	curl -X DELETE http://localhost:8000/new/2
+
+To get a blog with id :-
+	curl -v http://localhost:8000/new/1
