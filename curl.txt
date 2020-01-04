@@ -1,5 +1,5 @@
 
-curl -v http://localhost:8000
+curl -v --user abc:123 http://localhost:8000
 
 To save blog:-
 	curl -v  -d '{"title":"baeldung","body":"xyz","author_name":"vv","email":"a@gmail.com"}' -H 'Content-Type: application/json' http://localhost:8000/new
